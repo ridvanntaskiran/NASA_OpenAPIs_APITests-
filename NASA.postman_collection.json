@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "c00ccf65-7ed5-4a81-a572-90bdd0ccce9d",
+		"name": "NASA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21422290",
+		"_collection_link": "https://red-meadow-997509.postman.co/workspace/Udemy-Test-E%25C4%259Fitimi~bb798f8c-54a0-4a4c-a2b4-866f7712e793/collection/21422290-c00ccf65-7ed5-4a81-a572-90bdd0ccce9d?action=share&source=collection_link&creator=21422290"
+	},
+	"item": [
+		{
+			"name": "APOD",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/apod?api_key=8b4ZBDOIQFAAUf5EgUTrX1Pybzq9Ht6n38Fk91o0",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"apod"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "8b4ZBDOIQFAAUf5EgUTrX1Pybzq9Ht6n38Fk91o0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Asteroids - NeoWs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/neo/rest/v1/feed?start_date=2022-12-25&end_date=2023-1-1&api_key=8b4ZBDOIQFAAUf5EgUTrX1Pybzq9Ht6n38Fk91o0",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"neo",
+						"rest",
+						"v1",
+						"feed"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2022-12-25"
+						},
+						{
+							"key": "end_date",
+							"value": "2023-1-1"
+						},
+						{
+							"key": "api_key",
+							"value": "8b4ZBDOIQFAAUf5EgUTrX1Pybzq9Ht6n38Fk91o0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DONKI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/DONKI/CME?startDate=2021-05-05&endDate=2021-05-10&api_key=KBVBSSxPFogqhxbeBg1UVlCZ8fDNDBmsbbNB4sLx",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"DONKI",
+						"CME"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2021-05-05"
+						},
+						{
+							"key": "endDate",
+							"value": "2021-05-10"
+						},
+						{
+							"key": "api_key",
+							"value": "KBVBSSxPFogqhxbeBg1UVlCZ8fDNDBmsbbNB4sLx"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Techport",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/techport/api/specification?api_key=z5zaXewSPuNjsoPa5fvwNBwHExFU4JaofQgmT1pb",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"techport",
+						"api",
+						"specification"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "z5zaXewSPuNjsoPa5fvwNBwHExFU4JaofQgmT1pb"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mars Rover Photos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=z5zaXewSPuNjsoPa5fvwNBwHExFU4JaofQgmT1pb",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"mars-photos",
+						"api",
+						"v1",
+						"rovers",
+						"curiosity",
+						"photos"
+					],
+					"query": [
+						{
+							"key": "sol",
+							"value": "1000"
+						},
+						{
+							"key": "api_key",
+							"value": "z5zaXewSPuNjsoPa5fvwNBwHExFU4JaofQgmT1pb"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mars Rover Photos_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/fcam/FLB_486265257EDR_F0481570FHAZ00323M_.JPG",
+					"protocol": "http",
+					"host": [
+						"mars",
+						"jpl",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"msl-raw-images",
+						"proj",
+						"msl",
+						"redops",
+						"ods",
+						"surface",
+						"sol",
+						"01000",
+						"opgs",
+						"edr",
+						"fcam",
+						"FLB_486265257EDR_F0481570FHAZ00323M_.JPG"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
